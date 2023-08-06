@@ -3,14 +3,11 @@ import PropTypes from 'prop-types';
 
 const Todo = ({ onClick, completed, text, id }) => {
   return (
-    <li
-      onClick={onClick}
-      style={{
+    <li onClick={onClick} style={{
         textDecoration: completed ? "line-trough" : "none",
         textDecorationColor: completed ? "green" : "none",
         color: completed ? "green" : "white",
-      }}
-    >
+    }}>
         {id} - {text}
     </li>
   );
